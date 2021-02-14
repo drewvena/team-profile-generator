@@ -1,8 +1,16 @@
-const { TestScheduler } = require('jest')
-const Employee = require ('../lib/Employee.js')
+const { test, expect } = require('@jest/globals');
+const Employee = require('../lib/Employee.js');
 
-test('Creates a new employee', () => {
-    const employee = new Employee ('Drew', '01','drew@mail.com','owner')
-
-    expect(employee.name).toBe('Drew')
+test("check if user input works for employee class", () => {
+    const employee = new Employee();
+    
+    employee.getName().then(() => {
+        expect(employee.name).toEqual(expect.any(String));
+    });
+    employee.getId().then(() => {
+        expect(employee.id).toEqual(expect.any(String));
+    });
+    employee.getEmail().then(() => {
+        expect(employee.email).toEqual(expect.any(String));
+    });
 })
