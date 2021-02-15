@@ -1,5 +1,6 @@
 # team-profile-generator
-
+## Link to walkthrough video:
+###### https://drive.google.com/file/d/1xAscSHysUT6tWzEecO9ES9VhtJlwOYS5/view
 
  ##  Description
  ### This project uses inquirer to prompt questions from the user to create a html file with the employee/teamates they input into the program. Jest is used to test all code.
